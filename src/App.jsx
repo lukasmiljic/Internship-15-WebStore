@@ -1,9 +1,11 @@
+import Products from "./Data/Products.jsx";
+
 function App() {
   return (
-    <>
-      <h1>Test</h1>
-      <p>Test test test</p>
-    </>
+    <div>
+      <h1>Products</h1>
+      <Products />
+    </div>
   );
 }
 
