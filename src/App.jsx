@@ -1,10 +1,12 @@
-import Products from "./Data/Products.jsx";
+import Products from "./Components/ProductList/ProductList.jsx";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <h1>Products</h1>
-      <Products />
+      <Routes>
+        <Route path="/" element={<Products />} />
+      </Routes>
     </div>
   );
 }
