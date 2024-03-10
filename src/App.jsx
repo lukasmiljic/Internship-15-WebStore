@@ -1,4 +1,4 @@
-import Home from "./Components/Home/Home.jsx";
+import Home from "./Pages/Home/Home.jsx";
 import Products from "./Components/ProductList/ProductList.jsx";
 import { Routes, Route } from "react-router-dom";
 
