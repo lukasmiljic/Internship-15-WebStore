@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import fetchProducts from "../../Data/FetchProducts.js";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ProductsList = () => {
   const [productData, setProdcutData] = useState(null);
@@ -14,7 +15,7 @@ const ProductsList = () => {
       setIsLoading(true);
 
       try {
-        const products = await fetchProducts();
+        const products = await fetchProducts("");
         const filteredProducts = products.filter((product) => {
           return search.toLowerCase() === ""
             ? product
@@ -47,13 +48,17 @@ const ProductsList = () => {
 
   return (
     <div>
-      {productData && (
-        <ul>
-          {productData.map((product, index) => (
-            <li key={index}>{product.title}</li>
-          ))}
-        </ul>
-      )}
+      {productData &&
+        (productData.length === 0 ? (
+          <p>No products found</p>
+        ) : (
+          productData.map((product, index) => (
+            <p key={index}>
+              {" "}
+              <Link to={`/product/${product.id}`}> {product.title} </Link>
+            </p>
+          ))
+        ))}
     </div>
   );
 };
