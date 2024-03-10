@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import fetchProducts from "../../Data/FetchProducts.js";
 import { useParams } from "react-router-dom";
 
-const Products = () => {
+const ProductsList = () => {
   const [productData, setProdcutData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState();
   let { search } = useParams();
   if (!search) search = "";
-  console.log(search);
 
   useEffect(() => {
     const fetchAndSetData = async () => {
@@ -59,4 +58,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductsList;

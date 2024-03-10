@@ -1,12 +1,8 @@
 import { useState } from "react";
-import Products from "../../Pages/Products/Products";
+import { Link } from "react-router-dom";
 
 const SearchBar = () => {
   const [search, setSearch] = useState("");
-
-  const handleSearch = () => {
-    <Products search={search} />;
-  };
 
   return (
     <div className="search-bar">
@@ -15,7 +11,9 @@ const SearchBar = () => {
         placeholder="Search..."
         onChange={(e) => setSearch(e.target.value)}
       />
-      <button onClick={handleSearch}>Search</button>
+      <button>
+        <Link to={`/search/${search}`}>Search</Link>{" "}
+      </button>
     </div>
   );
 };
