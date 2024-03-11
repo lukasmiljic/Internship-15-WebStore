@@ -8,4 +8,13 @@ body {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  background: rgb(61, 52, 0);
+  background: radial-gradient(
+    circle at top,
+    rgb(51 43 0) 0%,
+    rgb(16, 16, 16) 55%
+  );
+}
+::selection {
+  background: #ffd90073;
 }

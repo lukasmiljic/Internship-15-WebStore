@@ -1,10 +1,12 @@
 import SearchBar from "../../Components/SearchBar/SearchBar";
-import "./Home.css";
+import classes from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className="home">
-      <h1>WebShop</h1>
+    <div className={classes.home}>
+      <h1 className={classes.title}>
+        <span className={classes.titleColor}>Web</span>Shop
+      </h1>
       <SearchBar />
     </div>
   );
