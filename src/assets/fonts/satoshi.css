@@ -126,8 +126,8 @@
 
 @font-face {
   font-family: "Satoshi-Bold";
-  src: url("./Satoshi-Bold.woff2") format("woff2"),
-    url("./Satoshi-Bold.woff") format("woff"),
+  src: /*url("./Satoshi-Bold.woff2") format("woff2"), */ url("./Satoshi-Bold.woff")
+      format("woff"),
     url("./Satoshi-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
@@ -156,8 +156,8 @@
 
 @font-face {
   font-family: "Satoshi-BlackItalic";
-  src: url("./Satoshi-BlackItalic.woff2") format("woff2"),
-    url("./Satoshi-BlackItalic.woff") format("woff"),
+  src: /* url("./Satoshi-BlackItalic.woff2") format("woff2"), */ url("./Satoshi-BlackItalic.woff")
+      format("woff"),
     url("./Satoshi-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-display: swap;
