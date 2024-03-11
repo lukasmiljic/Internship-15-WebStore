@@ -1,13 +1,14 @@
 import ProductList from "../../Components/ProductList/ProductList";
 import Header from "../../Components/Header";
+import classes from "./Products.module.css";
 
 const Products = () => {
   return (
-    <div className="products">
+    <div>
       <Header />
-      <hr />
-      <h2>Products</h2>
-      <ProductList />
+      <div className={classes.products}>
+        <ProductList />
+      </div>
     </div>
   );
 };
