@@ -4,16 +4,23 @@
   font-family: "Satoshi-Regular", serif;
 }
 
+/*fix height*/
+html {
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
+  color: #fafafa;
   margin: 0px;
-  padding: 0px;
-  background: rgb(61, 52, 0);
-  background: radial-gradient(
+  padding: 10px;
+  background: rgb(0, 0, 0);
+  background-image: radial-gradient(
     circle at top,
     rgb(51 43 0) 0%,
     rgb(16, 16, 16) 55%
   );
+  min-height: 100%;
 }
 ::selection {
   background: #ffd90073;

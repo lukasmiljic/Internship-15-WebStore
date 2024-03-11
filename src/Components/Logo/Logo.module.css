@@ -1,5 +1,5 @@
 .title {
-  font-size: 4rem;
+  display: inline-block;
   font-family: "Satoshi-Bold", serif;
   cursor: pointer;
   background-size: 100%;

@@ -7,6 +7,10 @@
   animation: 1s fadeInUp;
 }
 
+.logo {
+  font-size: 3rem;
+}
+
 @keyframes fadeInUp {
   0% {
     transform: translateY(2%);

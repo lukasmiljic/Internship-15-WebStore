@@ -5,7 +5,9 @@ import classes from "./Home.module.css";
 const Home = () => {
   return (
     <div className={classes.home}>
-      <Logo />
+      <div className={classes.logo}>
+        <Logo />
+      </div>
       <SearchBar />
     </div>
   );
