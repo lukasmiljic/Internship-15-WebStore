@@ -14,7 +14,8 @@ const SearchBar = () => {
       />
       <button>
         <Link to={`/search/${search}`}>
-          <i className={`fa-solid fa-magnifying-glass ${classes.searchIcon}`}></i>
+          <i
+            className={`fa-solid fa-magnifying-glass ${classes.searchIcon}`}></i>
         </Link>
       </button>
     </div>
