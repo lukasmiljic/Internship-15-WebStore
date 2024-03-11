@@ -1,4 +1,11 @@
+@import url("./assets/fonts/satoshi.css");
+
+* {
+  font-family: "Satoshi-Regular", serif;
+}
+
 body {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
