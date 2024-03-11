@@ -2,13 +2,12 @@
 
 * {
   font-family: "Satoshi-Regular", serif;
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
   color: #fafafa;
   margin: 0px;
-  /* padding: 10px; */
   background: rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-attachment: fixed;

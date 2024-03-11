@@ -12,6 +12,7 @@ const ProductsList = () => {
   let { search } = useParams();
   if (!search) search = "";
 
+
   useEffect(() => {
     const fetchAndSetData = async () => {
       setIsLoading(true);
