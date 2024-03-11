@@ -12,7 +12,9 @@ const Related = ({ category, id }) => {
     const fetchProduct = async () => {
       try {
         const targetProducts = await fetchProducts(`category/${category}`);
-        const removeDuplicate = targetProducts.filter((product) => product.id !== id);
+        const removeDuplicate = targetProducts.filter(
+          (product) => product.id !== id
+        );
         setProducts(removeDuplicate);
       } catch (error) {
         console.log(error);
@@ -30,8 +32,7 @@ const Related = ({ category, id }) => {
             products.map((product, index) => (
               <p key={index}>
                 <Link to={`/product/${product.id}`}>
-                  {" "}
-                  <ProductCard {...product} />{" "}
+                  <ProductCard {...product} />
                 </Link>
               </p>
             ))}
