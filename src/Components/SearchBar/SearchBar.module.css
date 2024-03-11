@@ -3,12 +3,12 @@
   border: 2px solid rgba(255, 255, 255, 0.19);
   padding: 2px;
   background-color: #1010105b;
+  display: flex;
 }
 
 .SearchBar input {
   border: none;
   padding: 10px;
-  /* margin: 5px; */
   outline: none;
   color: rgba(255, 255, 255, 0.4);
   background: none;
@@ -17,9 +17,7 @@
 .SearchBar button {
   background-color: #ffd700;
   color: white;
-  padding: 7px 20px;
   margin: 1px;
-  margin-right: 5px;
   border: none;
   cursor: pointer;
   border-radius: 30px;
@@ -27,10 +25,10 @@
 }
 
 .SearchBar button:hover {
-  /* background-color: #ffdf00; */
   box-shadow: 0px 0px 10px 0px #ffd700;
 }
 
 .searchIcon {
   color: #333;
+  padding: 7px 20px;
 }
