@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import fetchProducts from "../../Data/FetchProducts.js";
+import ProductCard from "../ProductCard/ProductCard.jsx";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import classes from "./ProductList.module.css";
 
 const ProductsList = () => {
   const [productData, setProdcutData] = useState(null);
@@ -47,15 +49,17 @@ const ProductsList = () => {
   }
 
   return (
-    <div>
+    <div className={classes.productList}>
       {productData &&
         (productData.length === 0 ? (
           <p>No products found</p>
         ) : (
           productData.map((product, index) => (
             <p key={index}>
-              {" "}
-              <Link to={`/product/${product.id}`}> {product.title} </Link>
+              <Link to={`/product/${product.id}`}>
+                {" "}
+                <ProductCard {...product} />{" "}
+              </Link>
             </p>
           ))
         ))}
